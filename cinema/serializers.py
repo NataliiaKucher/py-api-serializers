@@ -117,7 +117,7 @@ class MovieSessionListSerializer(MovieSessionSerializer):
 
 
 class MovieSessionRetrieveSerializer(MovieSessionSerializer):
-    movie = MovieRetrieveSerializer(
+    movie = MovieListSerializer(
         many=False,
         read_only=True
     )
